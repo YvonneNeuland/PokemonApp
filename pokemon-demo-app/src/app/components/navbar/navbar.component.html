@@ -1,0 +1,15 @@
+<nav class="navbar">
+  <div class="grid--row">
+    <section class="navbar--section__logo">
+      <a [routerLink]="['home-page']">
+        <app-logo [size]="'xs'"></app-logo>
+        <span class="navbar--section__logo-text">PokemonApp</span>
+      </a>
+    </section>
+    <section class="navbar--section__links">
+      <ul class="navbar--links">
+        <li><a [routerLink]="'/home-page'">Home</a></li>
+      </ul>
+    </section>
+  </div>
+</nav>

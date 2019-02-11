@@ -1,4 +1,19 @@
+// COLORS
 $accent-color: #008bb0;
 $background-color: #fafafa;
 $border-color: #c4c4c4;
-$text-color: #4a4a4a;
+$border-color-light: #ffffff;
+$accent-gradient-start: #3da5c2;
+$accent-gradient-end: #3d90ae;
+$text-color-dark: #4a4a4a;
+$text-color-light: #ffffff;
+
+// BORDERS
+$default-border: 2px solid $border-color;
+$default-border-light: 2px solid $border-color-light;
+
+// GRADIENTS
+$default-accent-gradient: linear-gradient($accent-gradient-start, $accent-gradient-end);
+
+// SHADOWS
+$default-shadow: 0px 2px 10px $border-color;

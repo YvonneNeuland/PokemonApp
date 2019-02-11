@@ -1,0 +1,55 @@
+.logo {
+    height: auto;
+    width: auto;
+
+    &--container {
+        height: auto;
+        width: 100%;
+
+        img {
+            width: 150px;
+        }
+
+        &.xs {
+            img{
+                width: 50px;
+            } 
+        }
+
+        &.small {
+            img{
+                width: 75px;
+            } 
+        }
+
+        &.medium {
+            img{
+                width: 100px;
+            } 
+        }
+
+        &.large {
+            img {
+                width: 125px;
+            }
+        }
+
+        &.xl {
+            img {
+                width: 150px;
+            }
+        }
+
+        &.center {
+            justify-content: center;
+        }
+
+        &.left {
+            justify-content: left;
+        }
+
+        &.right {
+            justify-content: right;
+        }
+    }
+}

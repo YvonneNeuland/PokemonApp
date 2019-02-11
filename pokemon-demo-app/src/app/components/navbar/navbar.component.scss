@@ -1,0 +1,74 @@
+@import "../../shared/scss/main.scss";
+
+.navbar {
+
+    align-items: center;
+    background: $default-accent-gradient;
+    display: flex;
+    flex-basis: auto;
+    flex-direction: row;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+    height: 50px;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: $default-spacing 0;
+    width: 100%;
+
+    &--section {
+        align-items: right;
+        display: flex;
+        flex-direction: row;
+        padding-left: $default-spacing * 3;
+        width: auto;
+    }
+
+    &--links {
+        li {
+            align-items: center;
+            list-style-type: none;
+            padding: $default-spacing 0;
+
+            a {
+                color: $text-color-light;
+                margin-right: $default-spacing * 2;
+                text-decoration: none;
+
+                &.navbar--section__links-active {
+                    border-bottom: $default-border-light;
+                    padding-bottom: 2px;
+                }
+            }
+        }
+    }
+
+    .navbar--section__logo {
+        @extend .navbar--section;
+        
+        align-items: center;
+
+        a {            
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            text-decoration: none;
+        }
+
+        &-text {
+            color: $text-color-light;
+            display: flex;
+            font-size: 1.25em;
+            font-weight: 700;
+            padding-right: $default-spacing;            
+        }
+    }
+
+    .navbar--section__links {
+        @extend .navbar--section;
+
+        align-items: center;
+        font-size: 1.25em;
+    }
+}
